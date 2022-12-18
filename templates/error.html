@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>错误</title>
+        <link href="static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center">
+                <h1 class="display-1 fw-bold">服务器错误</h1>
+                <p class="fs-3"> <span class="text-danger">Opps!</span> 您所查找的Teams会议似乎有误，如果您认为这是一个错误，请返回重试。</p>
+                <p class="lead">
+                    错误详情：{{ error }}
+                  </p>
+                <a href="/" class="btn btn-primary">返回</a>
+            </div>
+        </div>
+    </body>
+
+
+</html>
