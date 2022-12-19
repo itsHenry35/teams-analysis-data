@@ -8,10 +8,13 @@ def process_time(seconds):
     return f"""{h}小时 {m}分钟 {s}秒"""
 
 def process_time2(time):
-    _date = parser.parse(time)
-    local_time = _date + timedelta(hours=8)
-    end_time = local_time.strftime("%H:%M:%S")
-    return end_time
+    if time == 0:
+        return "未加入"
+    else:
+        _date = parser.parse(time)
+        local_time = _date + timedelta(hours=8)
+        end_time = local_time.strftime("%H:%M:%S")
+        return end_time
 
 def get_attendance_by_json(json):
     names = [
